@@ -1,6 +1,7 @@
  "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { ArrowRight, Menu, X, MapPin, CarFront, Compass, MessageCircle, ShieldCheck, Phone, Mail, Instagram, Facebook, ChevronRight } from "lucide-react";
 
 const WA = "94765402575";
@@ -42,7 +43,7 @@ export default function Home() {
   return (
     <main>
       <header className="header">
-        <a href="#home" className="brand"><span className="brand-mark">S</span><span>SAMPA <b>TOURS</b><small>HELLO SRI LANKA</small></span></a>
+        <a href="#home" className="brand" aria-label="Sampa Tours home"><Image src="/images/sampatus-logo.png" alt="Sampa Tours logo" width={940} height={1280} priority className="brand-logo"/><span className="brand-tagline">HELLO SRI LANKA</span></a>
         <nav className="desktop-nav">{nav.map(([label, href]) => <a key={label} href={href}>{label}</a>)}</nav>
         <a className="nav-cta" href="#quote">Plan your trip <ArrowRight size={16}/></a>
         <button className="mobile-toggle" aria-label="Toggle navigation" onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X/> : <Menu/>}</button>
@@ -80,7 +81,7 @@ export default function Home() {
 
       <section className="gallery-section"><div className="gallery-title"><span className="eyebrow light">LITTLE MOMENTS, BIG MEMORIES</span><h2>The beauty of <em>Sri Lanka.</em></h2></div><div className="gallery-grid"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Ocean and beach"/><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80" alt="Wildlife landscape"/><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Mountain lake"/><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80" alt="Tropical coastline"/></div></section>
 
-      <footer id="contact"><div className="footer-main"><div className="footer-brand"><a href="#home" className="brand brand-footer"><span className="brand-mark">S</span><span>SAMPA <b>TOURS</b><small>HELLO SRI LANKA</small></span></a><p>Discover paradise. Travel your way. Let your Sri Lankan journey begin with us.</p></div><div><h4>EXPLORE</h4><a href="#destinations">Destinations</a><a href="#service">Private vehicle</a><a href="#journeys">Suggested journeys</a><a href="#quote">Get a quotation</a></div><div><h4>GET IN TOUCH</h4><a href="tel:+94765402575"><Phone size={15}/> +94 76 540 2575</a><a href="mailto:hello@sampatours.lk"><Mail size={15}/> Email us</a><a href={waLink("Hello Sampa Tours!")}><MessageCircle size={15}/> WhatsApp us</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} SAMPA TOURS. All rights reserved.</span><span>MADE WITH LOVE IN SRI LANKA 🇱🇰</span></div></footer>
+      <footer id="contact"><div className="footer-main"><div className="footer-brand"><a href="#home" className="brand brand-footer" aria-label="Sampa Tours home"><Image src="/images/sampatus-logo.png" alt="Sampa Tours logo" width={940} height={1280} className="footer-logo"/></a><p>Discover paradise. Travel your way. Let your Sri Lankan journey begin with us.</p></div><div><h4>EXPLORE</h4><a href="#destinations">Destinations</a><a href="#service">Private vehicle</a><a href="#journeys">Suggested journeys</a><a href="#quote">Get a quotation</a></div><div><h4>GET IN TOUCH</h4><a href="tel:+94765402575"><Phone size={15}/> +94 76 540 2575</a><a href="mailto:hello@sampatours.lk"><Mail size={15}/> Email us</a><a href={waLink("Hello Sampa Tours!")}><MessageCircle size={15}/> WhatsApp us</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} SAMPA TOURS. All rights reserved.</span><span>MADE WITH LOVE IN SRI LANKA 🇱🇰</span></div></footer>
       <a className="floating-wa" href={waLink("Hello Sampa Tours! I would like to plan a private trip in Sri Lanka.")} target="_blank" rel="noreferrer" aria-label="Chat with Sampa Tours on WhatsApp"><MessageCircle size={23}/><span>Chat with us</span></a>
     </main>
   );

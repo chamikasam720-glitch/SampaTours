@@ -4,7 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sampa Tours | Hello Sri Lanka",
   description: "Discover Sri Lanka with Sampa Tours. Private vehicle and driver services with personalized travel quotations.",
-  keywords: ["Sri Lanka tours", "private driver Sri Lanka", "Sampa Tours", "Hello Sri Lanka"]
+  keywords: ["Sri Lanka tours", "private driver Sri Lanka", "Sampa Tours", "Hello Sri Lanka"],
+  icons: { icon: "/images/sampatus-logo.png", apple: "/images/sampatus-logo.png" }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
