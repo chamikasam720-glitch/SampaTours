@@ -6,7 +6,7 @@ import { ArrowRight, Menu, X, MapPin, CarFront, Compass, MessageCircle, ShieldCh
 
 const WA = "94765402575";
 const destinations = [
-  { name: "Sigiriya", type: "Culture & heritage", img: "https://images.unsplash.com/photo-1588598198321-9735fd5f9c2c?auto=format&fit=crop&w=900&q=85", desc: "Discover the iconic Lion Rock and the ancient stories of Sri Lanka." },
+  { name: "Sigiriya", type: "Culture & heritage", img: "/images/sigiriya/sigiriya_rock_fortress.jpg", desc: "Discover the iconic Lion Rock and the ancient stories of Sri Lanka." },
   { name: "Ella", type: "Hill country", img: "/images/ella/ella_nine_arch_bridge.jpg", desc: "Green mountains, scenic viewpoints and unforgettable train journeys." },
   { name: "Galle", type: "Coastal heritage", img: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=85", desc: "Wander through the historic fort and enjoy the southern coastline." },
   { name: "Mirissa", type: "Beach escape", img: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85", desc: "Slow down beside palm-fringed beaches and beautiful ocean views." },
